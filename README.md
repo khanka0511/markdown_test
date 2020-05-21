@@ -1,7 +1,7 @@
 # MathVec
 Math library built with Typescript 🧮
 
-Tool for implementing math equations for your app
+Typescript tool for implementing math equations for your app
 
 ## Setup
 - Clone repository `git clone https://github.com/zolbooo/mathvec.git`
@@ -9,10 +9,11 @@ Tool for implementing math equations for your app
 - Run: 
 ```
        npm run-script build
-       npm run-script run
+       npm run-script dev
 ```
 - To run test cases built within the repository: `npm test`
 
-Directional comments are written in the code which you can implement them to your app
-You can also add a little spice and use them for Figma, Adobe XD as a plugin 
+**Directional comments are written in the code which you can implement them to your app.
+You can also add a little spice and use them for Figma, Adobe XD as a plugin.**
+- Math Rocks! 🚀
 

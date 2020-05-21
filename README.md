@@ -3,11 +3,9 @@ Math library built with Typescript
 
 Typescript tool for implementing math equations for your app
 
-## Setup 
-- Install `npm install mathvec`
-
 ## Usage
 
+- Install `npm install mathvec`
 - Import `import { Vec, Point } from 'mathvec';`
 
 #### Function Vec creates new Vector instance which has following methods:

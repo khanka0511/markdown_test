@@ -15,50 +15,47 @@ Typescript tool for implementing math equations for your app
 
 ## Usage
 
-/** Add two vectors. Returns new vector. 
+##### Function Vec creates new Vector instance which has following methods:
 ```
+  /** Add two vectors. Returns new vector. */
   add(b: Vector): Vector;
-```
-Subtract two vectors. Returns new vector. 
-```
+  /** Subtract two vectors. Returns new vector. */
   sub(b: Vector): Vector;
-```
-Multiply vector by scalar. Returns new vector.
-``` 
+  /** Multiply vector by scalar. Returns new vector. */
   mul(b: number): Vector;
-```
-Find dot product of two vectors. 
-```
+  /** Find dot product of two vectors. */
   dot(b: Vector): number;
-```
-Find angle between two vectors. 
-```
+  /** Find angle between two vectors. */
   angle(b: Vector): ReturnType<typeof Angle>;
-```
-Create new vector with opposite direction with same length. 
-```
-  neg(): Vector;
-```
-Check if two vectors are equal. 
-```
-  equal(v2: Vector): boolean;
-```  
 
-Calculate vector between two points 
+  /** Create new vector with opposite direction with same length. */
+  neg(): Vector;
+  /** Check if two vectors are equal. */
+  equal(v2: Vector): boolean;
 ```
+For example:
+```
+  const a = Vec(1, -4, 3);
+  const b = Vec(9, 4, 2);
+  a.add(b); // Vec(10, 0, 5)
+```
+
+##### Function Point creates new TPoint instance. TPoint has following methods:
+```
+  /** Calculate vector between two points */
   to(p2: TPoint): Vector;
-```
-Get middle of two points 
-```
+  /** Get middle of two points */
   mid(p2: TPoint): TPoint;
-```  
-Apply vector transformation on point 
-```
+  /** Apply vector transformation on point */
   apply(vec: Vector): TPoint;
+  /** Check if two points are equal. */
+  equal(p2: TPoint): boolean; 
 ```
-Check if two points are equal. 
+For example: 
 ```
-  equal(p2: TPoint): boolean;
+  const a = Point(1, 1, 1);
+  const b = Point(3, 3, 3);
+  a.mid(b); //mid(2, 2, 2);
 ```
 
 **Directional comments are written in the code which you can implement them to your app.

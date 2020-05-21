@@ -3,17 +3,12 @@ Math library built with Typescript
 
 Typescript tool for implementing math equations for your app
 
-## Setup
-- Clone repository `git clone https://github.com/zolbooo/mathvec.git`
-- Install dependencies: `npm install`
-- Run: 
-```
-       npm run-script build
-       npm run-script dev
-```
-- To run test cases built within the repository: `npm test`
+## Setup 
+- Install `npm install mathvec`
 
 ## Usage
+
+- Import `import { Vec, Point } from 'mathvec';`
 
 #### Function Vec creates new Vector instance which has following methods:
 - Add two vectors. Returns new vector. 
@@ -75,7 +70,15 @@ For example:
   a.mid(b); //mid(2, 2, 2);
 ```
 
-**Directional comments are written in the code which you can implement them to your app.
-You can also add a little spice and use them for Figma, Adobe XD as a plugin.**
+## Setup for development
+- Clone repository `git clone https://github.com/zolbooo/mathvec.git`
+- Install dependencies: `npm install`
+- Run: 
+```
+       npm run-script build
+       npm run-script dev
+```
+- To run test cases built within the repository: `npm test`
+
 - Math Rocks! 🚀
 
